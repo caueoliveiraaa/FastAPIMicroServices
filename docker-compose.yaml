@@ -1,0 +1,51 @@
+---
+services:
+  postgres:
+    restart: on-failure
+    image: postgres:16
+    networks:
+      - apis
+    environment:
+      POSTGRES_PASSWORD: "23322423"
+      TZ: "America/Sao_Paulo"
+  user-api:
+    image: user_api:latest
+    environment:
+      DB_URL: 'postgresql://postgres:23322423@postgres:5432/ApiUsers'
+      ORDERS_API: 'http://order-api:8000/api/orders/delete/by_user/'
+      PASSWORD_ENCRYPTION: 'Sys-tem101010$$$$Pr0gr@m'
+    build:
+      dockerfile: ./user_api/Dockerfile
+      context: .
+      tags:
+        - user_api:latest
+        - user_api:1.0
+    restart: on-failure
+    ports:
+      - 8080:8000
+    networks:
+      - apis
+    depends_on:
+      - postgres
+  order-api:
+    image: order_api:latest
+    environment:
+      ORDER_API: 'order-api'
+      DB_URL: 'postgresql://postgres:23322423@postgres:5432/ApiOrders'
+      USERS_API: 'http://user-api:8000/api/users/'
+    build:
+      dockerfile: ./order_api/Dockerfile
+      tags:
+        - order_api:latest
+        - order_api:1.0
+    restart: on-failure
+    ports:
+      - 8000:8000
+    networks:
+      - apis
+    depends_on:
+      - postgres
+      - user-api
+
+networks:
+  apis:
