@@ -1,10 +1,10 @@
 ![screenshot](system-design-overview.jpg "Application")
 
-# SEARASA CONSUMIDOR - DOCUMENTAÇÃO 🔎⬇ 
+# MICROSERVIÇOS - DOCUMENTAÇÃO 🔎⬇ 
 
 ## |--- Sobre o projeto ⚙️🗂
 
-Bem-vindo ao ***'Serasa Consumidor'***. Esta aplicação foi desenvolvida para fornecer uma plataforma segura para gerenciar dados sensíveis. Aqui está um overview das principais características:
+Seja bem-vindo(a). Esta aplicação foi desenvolvida para fornecer uma plataforma segura para gerenciar dados sensíveis. Aqui está um overview das principais características:
 
 - **Linguagem de programação**: A linguagem de programação escolhida para o projeto foi o ***Python*** 🐍, por ser extremament flexível, fácil de utilizar e por ter ótimas `libs` e `frameworks`. A aplicação foi desenvolvida na `versão 3.12.1`
 
@@ -187,7 +187,7 @@ Todos os endpoints trabalham com payloads em formato ***JSON***
 
 ## |--- About the project ⚙️🗂
 
-Welcome to ***'Serasa Consumidor'***. This application is designed to provide a secure and efficient platform for managing sensitive data. Here's a brief overview of its main features:
+Welcome. This application is designed to provide a secure and efficient platform for managing sensitive data. Here's a brief overview of its main features:
 
 - **Programming language**: The programming language chosen for this application was ***Python*** 🐍, because it's very flexible, easy to use and it has great `libs` and `frameworks`. The application was developed in the `version 3.12.1`
 
