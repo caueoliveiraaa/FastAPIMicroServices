@@ -183,7 +183,7 @@ Todos os endpoints trabalham com payloads em formato ***JSON***
 
 #### -- Para mais informações verifique este [tutorial](https://docs.github.com/en/rest?apiVersion=2022-11-28) sobre ***RestAPI***
 ---
-# SEARASA CONSUMIDOR - DOCUMENTATION 🔎🌍⬇ 
+# MICROSERVICES - DOCUMENTATION 🔎🌍⬇ 
 
 ## |--- About the project ⚙️🗂
 
